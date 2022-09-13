@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Story.css'
 
 const Story = ({image, abstract, title}) => {
     if(image) {
 return (
   <>
+  <Link to={`${title}`}>
   <div className="story-wrapper">
   <div className="image-container">
   <img className="story-image" src={image[2].url}/>
@@ -14,6 +16,7 @@ return (
   <p className="story-abstract">{abstract}</p>
   </div>
   </div>
+  </Link>
   <hr></hr>
   </>
 )

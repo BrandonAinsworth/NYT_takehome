@@ -6,7 +6,6 @@ export const getStories = (param) => {
     if (!res.ok) {
       throw new Error();
   }
-  console.log(res)
   return res.json();
 })
 .catch((error) => {
