@@ -9,23 +9,50 @@ const App = () => {
 
 
 const [stories, setStories] = useState([])
+const [searchedStories, setSearchedStories] = useState([])
 
 useEffect(() => {
-    getStories('world')
-      .then(data => {
-          setStories(data.results)
-      })
-  },[])
+  getStories('world')
+  .then(data => {
+    setStories(data.results)
+  })
+},[])
+
+const searchCurrentStories = (e) => {
+  e.preventDefault()
+  let filterStories = stories.filter(news => {
+    return news.title.toLowerCase().includes(e.target.value.toLowerCase())
+  })
+  
+  setSearchedStories(filterStories)
+}
 
   return (
     <>
     <Route exact path='/'>
     <Header setStories={setStories}/>
-    {stories.length ? 
+    {stories.length
+    ? 
+    <>
+    <input
+    type='text'
+    data-cy='search'
+    placeholder="Search by Keyword"
+    name='search-form'
+    className='search'
+    aria-label='search movies'
+    onChange={e => searchCurrentStories(e)}
+    />
+    {!searchedStories.length ?
     <StoriesContainer stories={stories}/>
+    :
+    <StoriesContainer stories={searchedStories}/>
+}
+    </>
     :
     <p>LOADING...</p>
 }
+
     </Route>
     <Route exact path='/:title' render={({match}) => {
       return <Details title={match.params.title} stories={stories}/>
