@@ -1,0 +1,15 @@
+.details-title {
+  font-size: 4em;
+}
+
+.details-image {
+  height: 8vh;
+  width: 8vw;
+  height: 100vh;
+  width: 92vw;
+}
+
+.details-image-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
