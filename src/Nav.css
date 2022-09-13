@@ -1,0 +1,13 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  padding-left: .2em;
+  padding-right: .2em;
+}
+
+.categories:hover {
+  cursor: pointer;
+} 

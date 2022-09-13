@@ -20,7 +20,7 @@ useEffect(() => {
 
   return (
     <>
-    <Header />
+    <Header setStories={setStories}/>
     {stories.length ? 
     <StoriesContainer stories={stories}/>
     :
