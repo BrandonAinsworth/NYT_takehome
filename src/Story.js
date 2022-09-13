@@ -1,12 +1,20 @@
 import React from "react";
+import './Story.css'
 
 const Story = ({image, abstract, title}) => {
     if(image) {
 return (
   <>
-  <p>{title}</p>
-  <p>{abstract}</p>
+  <div className="story-wrapper">
+  <div className="image-container">
   <img className="story-image" src={image[2].url}/>
+  </div>
+  <div className="info-container">
+  <p className="story-title">{title}</p>
+  <p className="story-abract">{abstract}</p>
+  </div>
+  </div>
+  <hr></hr>
   </>
 )
     }

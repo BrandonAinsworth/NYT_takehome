@@ -1,0 +1,24 @@
+.story-wrapper {
+  display: flex;
+  background-color: aliceblue;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+}
+
+.story-image {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.story-title, .story-abstract {
+  text-align: center;
+}

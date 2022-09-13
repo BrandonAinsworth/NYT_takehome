@@ -24,7 +24,7 @@ useEffect(() => {
     {stories.length ? 
     <StoriesContainer stories={stories}/>
     :
-    <p>Deez nuts</p>
+    <p>LOADING...</p>
 }
     </>
   );
