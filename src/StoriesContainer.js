@@ -29,6 +29,7 @@ const StoriesContainer = ({stories}) => {
       abstract={story.abstract}
       title={story.title}
       image={story.multimedia}
+      key={(Date.now() * Math.random())}
       />
     )
     }

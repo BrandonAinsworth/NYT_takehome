@@ -11,7 +11,7 @@ return (
   </div>
   <div className="info-container">
   <p className="story-title">{title}</p>
-  <p className="story-abract">{abstract}</p>
+  <p className="story-abstract">{abstract}</p>
   </div>
   </div>
   <hr></hr>
