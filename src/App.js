@@ -10,6 +10,7 @@ const App = () => {
 
 const [stories, setStories] = useState([])
 const [searchedStories, setSearchedStories] = useState([])
+const [result, setResult] = useState(true)
 
 useEffect(() => {
   getStories('world')
@@ -21,10 +22,17 @@ useEffect(() => {
 const searchCurrentStories = (e) => {
   e.preventDefault()
   let filterStories = stories.filter(news => {
-    return news.title.toLowerCase().includes(e.target.value.toLowerCase())
+     if(news.title.toLowerCase().includes(e.target.value.toLowerCase())) {
+      return news
+     } else if (news.title.toLowerCase().includes(e.target.value.toLowerCase())){
+      return []
+     }
   })
-  
+  if(filterStories !== []) {
   setSearchedStories(filterStories)
+  } else {
+    setResult(false)
+  }
 }
 
   return (

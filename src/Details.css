@@ -13,3 +13,8 @@
   display: flex;
   justify-content: space-around;
 }
+
+.details-abstract ,.cta {
+  margin-left: 4em;
+  margin-bottom: 2em;
+}
