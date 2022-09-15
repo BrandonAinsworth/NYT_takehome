@@ -1,13 +1,39 @@
 .categories {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ece7e7;
+  margin-top: 2em;
+  margin-top: 1.5em;
 }
 
 .category {
-  padding-left: .2em;
+  padding-left: .6em;
   padding-right: .2em;
 }
 
-.categories:hover {
+.arts:hover ,
+.automobiles:hover,
+.business:hover,
+.fashion:hover,
+.food:hover,
+.health:hover,
+.insider:hover,
+.magazine:hover,
+.movies:hover,
+.newyork:hover,
+.obit:hover,
+.opinion:hover,
+.politics:hover,
+.real:hover,
+.science:hover,
+.sports:hover,
+.tech:hover,
+.theatre:hover,
+.travel:hover,
+.us:hover,
+.world:hover 
+{ 
+  color: cadetblue;
   cursor: pointer;
-} 
+}

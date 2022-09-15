@@ -1,5 +1,6 @@
 import React from "react";
 import Story from "./Story";
+import './StoriesContainer.css'
 
 // abstract: "A quarter-century ago Princess Diana’s shocking death provoked outrage at the royal family. Queen Elizabeth’s passing, in contrast, has been draped in civility and respect."
 // byline: "By Sarah Lyall"
