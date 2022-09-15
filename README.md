@@ -32,3 +32,8 @@ Future features could include:
 3. To run the server, run command `npm start` in the terminal. To stop the local server, use command `Control + C`.
 4. The server should direct you to http://localhost:3000, but if not, visit http://localhost:3000
 5. Use the app! 
+
+## Documentation
+
+* [Wireframe](https://www.figma.com/file/tnXWvyVBZwPD1i38JxMZsP/NYT-takehome?node-id=0%3A1)
+* [Project Board](https://github.com/users/BrandonAinsworth/projects/3)
