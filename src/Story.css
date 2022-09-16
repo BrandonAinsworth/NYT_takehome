@@ -22,3 +22,8 @@
 .story-title, .story-abstract {
   text-align: center;
 }
+
+.hr {
+  border: 0.5px solid;
+  border-color: black;
+}

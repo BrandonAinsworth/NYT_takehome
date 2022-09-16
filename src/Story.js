@@ -9,7 +9,7 @@ return (
   <Link to={`${title}`}>
   <div className="story-wrapper">
   <div className="image-container">
-  <img className="story-image" src={image[2].url}/>
+  <img className="story-image" alt={title} src={image[2].url}/>
   </div>
   <div className="info-container">
   <p className="story-title">{title}</p>
@@ -17,7 +17,7 @@ return (
   </div>
   </div>
   </Link>
-  <hr></hr>
+  <hr className="hr"></hr>
   </>
 )
     }
